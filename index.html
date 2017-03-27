@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+<title> java-Markes method</title>
+
+	<style>
+
+h1{
+    text-align: center;
+text-transform: initial;
+color: rgb(110, 1, 77);
+}
+.input{
+display: block;
+padding: 13px 5px;
+border: 1px solid #7e8bc3;
+border-radius: 0px;
+margin: 25px auto;
+}
+.button{
+display: block;
+margin: 20px auto;
+width: 113px;
+padding: 2px;
+text-transform: capitalize;
+font-size: 17px;
+border-radius: 0px;
+border: 1px solid #15d289;
+color: #c12ed7;
+}
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<h1>Type Marks here:</h1>
+
+<form NAME="formlebel" ACTION="" METHOD="GET">
+       <input TYPE="text" NAME="inputbox" VALUE="" class="input" placeholder="Number">
+       <input TYPE="button" NAME="button1" Value="click" onClick="clickbutton(this.form)" class="button">
+</form>
+
+
+<script>
+	
+ function clickbutton (form) {
+    var a =form.inputbox.value;
+    
+if(a>=80&&a<=100){
+	alert("your grade is A+");
+ }
+else if(a>=70&&a<=79){
+	alert("your grade is A-");
+}
+else if(a>=60&&a<=69){
+	alert("your grade is B");
+}
+else if(a>=50&&a<=59){
+	alert("your grade is C");
+}
+else if(a>=40&&a<=49){
+	alert("your grade is D");
+}
+else if(a>=33&&a<=39){
+	alert("your grade is E");
+}
+else if(a>=0&&a<=32){
+	alert("your grade is F");
+	
+}
+else {
+	alert("your grade is Invalid");
+	
+}
+}
+</script>
+</body>
+</html>
